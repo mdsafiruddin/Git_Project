@@ -1,10 +1,16 @@
 package org.kk.spring.test;
 
+import org.kk.spring.beans.Student;
+
 public class SpringDemoTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ApplicationContext context = null;
+		Student student = null;
+		
+		student = context.getBean("student",Student.class);
+		System.out.println(student.getStudent());
+		
 	}
 
 }
